@@ -11,7 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
 )
 
-catkin_python_setup()
+# catkin_python_setup()
 
 generate_dynamic_reconfigure_options(cfg/Scan.cfg)
 
@@ -27,9 +27,9 @@ catkin_package(
   std_msgs
 )
 
-catkin_install_python(
-  PROGRAMS
-    scripts/csv_to_pointcloud.py
-    scripts/scan.py
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+#catkin_install_python(
+#  PROGRAMS
+#    scripts/csv_to_pointcloud.py
+#    scripts/scan.py
+#  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+# )
